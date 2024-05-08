@@ -18,8 +18,13 @@ function getKeypairFromStr(str: string): web3.Keypair | null {
     }
 }
 
+///////////ayad//////////////
+
 export const RPC_ENDPOINT_MAIN = "https://indulgent-wandering-wave.solana-mainnet.quiknode.pro/a2bbf908f0bef4ff590544046ccc4f1b711b6d32/"
-export const RPC_ENDPOINT_DEV = "https://white-proportionate-putty.solana-devnet.quiknode.pro/11132715a936f8adb03c940c627d6c0b9369d9e6/"
+// export const RPC_ENDPOINT_DEV = "https://white-proportionate-putty.solana-devnet.quiknode.pro/11132715a936f8adb03c940c627d6c0b9369d9e6/"
+
+export const RPC_ENDPOINT_DEV = "https://api.devnet.solana.com/"
+
 
 
 export const addLookupTableInfo = LOOKUP_TABLE_CACHE // only mainnet. other = undefined
