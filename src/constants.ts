@@ -1,13 +1,11 @@
-import { config } from "dotenv"
-import { bs58 } from "@project-serum/anchor/dist/cjs/utils/bytes";
-import { web3 } from "@project-serum/anchor";
+import { config } from 'dotenv';
+
+import { web3 } from '@project-serum/anchor';
+import { bs58 } from '@project-serum/anchor/dist/cjs/utils/bytes';
 import {
-    TxVersion,  Token,Currency,
-    TOKEN_PROGRAM_ID,
-    SOL,
-    CacheLTA,
-    LOOKUP_TABLE_CACHE
-   } from "@raydium-io/raydium-sdk";
+  LOOKUP_TABLE_CACHE,
+  TxVersion,
+} from '@raydium-io/raydium-sdk';
 
 config();
 function getKeypairFromStr(str: string): web3.Keypair | null {
@@ -23,7 +21,8 @@ function getKeypairFromStr(str: string): web3.Keypair | null {
 export const RPC_ENDPOINT_MAIN = "https://indulgent-wandering-wave.solana-mainnet.quiknode.pro/a2bbf908f0bef4ff590544046ccc4f1b711b6d32/"
 // export const RPC_ENDPOINT_DEV = "https://white-proportionate-putty.solana-devnet.quiknode.pro/11132715a936f8adb03c940c627d6c0b9369d9e6/"
 
-export const RPC_ENDPOINT_DEV = "https://api.devnet.solana.com/"
+// export const RPC_ENDPOINT_DEV = "https://api.devnet.solana.com/"
+export const RPC_ENDPOINT_DEV = "https://api.devnet.solana.com"
 
 
 
